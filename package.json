@@ -1,6 +1,6 @@
 {
   "name": "dev-cheatsheets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Flagscript Github Pages Cheatsheets",
   "main": "index.js",
   "scripts": {
