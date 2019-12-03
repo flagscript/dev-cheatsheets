@@ -1,12 +1,12 @@
 {
-  "name": "test_website",
+  "name": "dev-cheatsheets",
   "version": "1.0.0",
-  "description": "Greg Test Website",
+  "description": "Flagscript Github Pages Cheatsheets",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Greg Kaestle",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
