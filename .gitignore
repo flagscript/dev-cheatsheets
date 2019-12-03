@@ -1,0 +1,6 @@
+## Ignore VS Code files
+.vscode/*
+*.code-workspace
+
+## Ignore Node.js files
+node_modules/
