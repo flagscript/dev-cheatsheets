@@ -1,0 +1,134 @@
+@import 'third_party';
+@import 'variables';
+@import 'reset';
+@import 'base';
+@import 'utility';
+
+// Nav
+
+nav {
+
+	background: $primary-color;
+	color: $white-color;
+  position: sticky;
+  top: 0;
+	z-index: 2;	
+	
+	#main-nav {
+
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0.5rem 0;
+
+		.nav-social {			
+
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 0 1rem;
+
+			.btn-primary {
+				border: none;
+			}
+
+			a {
+
+				margin-right: 1rem;
+				padding: 0.4rem 0;
+
+				i {				
+					border: 2px $white-color solid;
+					border-radius: 50%;					
+					display: inline-block;	
+					padding: 0.3rem;
+					text-align: center;	
+					transition: all 1s ease-in;							
+				}
+
+			}
+
+			a:hover > i {
+				border: 2px $light-grey-color solid;
+				color: $light-grey-color;
+				transform: rotate(360deg);				
+
+			}
+
+		}		
+
+	}
+
+}
+
+// Page Header
+
+header {
+	background: $primary-color;
+	color: $white-color;
+	text-align: center;
+
+	h1 {
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+}
+
+// Cheatsheet Index
+
+.cheats-section {
+
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+}
+
+%cheats-shared {
+
+	align-items: center;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 1fr;
+	justify-content: space-evenly;
+
+	div {
+		background: $light-grey-color;
+		border: 1px $primary-color solid;
+		border-radius: 0.4rem;
+		text-align: center;
+
+		a {	
+			font-size: 1.3rem;			
+			height: 100%;
+			width: 100%;
+		}
+
+		.btn:hover {
+			background-color: $primary-color;		
+			border: 1px $white-color solid;
+			color: #fff;
+		}
+
+	}
+
+}
+
+.cheats-environment {
+
+	@extend %cheats-shared;
+	grid-template-columns: repeat(2, 1fr);	
+
+}
+
+.cheats-command {
+
+	@extend %cheats-shared;
+	grid-template-columns: repeat(4, 1fr);
+
+}

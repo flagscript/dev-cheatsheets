@@ -1,0 +1,103 @@
+// Container 
+.container {
+	margin: auto;
+	max-width: 1100px;
+	overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+// Text Align/Decoration
+.text-center {
+  text-align: center;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+// Margin Classes
+.my {
+
+	&-1 {
+		margin: 1rem 0;
+	}
+
+	&-2 {
+		margin: 2rem 0;
+	}
+
+	&-3 {
+		margin: 3rem 0;
+	}
+
+}
+
+// Padding Classes
+.py {
+
+	&-1 {
+		padding: 1rem 0;
+	}
+
+	&-2 {
+		padding: 2rem 0;
+	}
+
+	&-3 {
+		padding: 3rem 0;
+	}
+
+}
+
+// Buttons
+
+%btn-shared {
+	border: none;
+	border-radius: 5px;
+  cursor: pointer;	
+  display: inline-block;
+	padding: 0.8rem 2rem;
+	text-decoration: none;
+  transition: all 1s ease;
+}
+
+.btn {
+
+	@extend %btn-shared;
+
+  &-primary {
+		background-color: $primary-color;		
+		border: 1px $white-color solid;
+    color: #fff;
+	}
+	
+	&-light-grey {
+		background: $light-grey-color;
+		border: 1px $dark-grey-color solid;
+		color: $dark-grey-color; 		
+	}
+
+}
+
+// Common Elements
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+	background: #3D5A80;
+	display: block;
+	height: 0.1rem;
+	margin: 0 auto 1rem auto;
+	width: 3rem;
+}
+
+.lead {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
