@@ -2,11 +2,32 @@
 
 	%cheats-media-shared {
 		grid-template-columns: repeat(2, 1fr);
+
+		i {
+			display: block;
+		}
+
 	}
 
-	.cheats-command {
+	.cheats {
+
 		@extend %cheats-media-shared;
-		grid-template-columns: repeat(2, 1fr);		
+
+		&-command {
+			grid-template-columns: repeat(2, 1fr);
+			i {
+				display: block;
+			}			
+		}
+
+		&-environment {
+
+			i {
+				display: block;
+			}			
+
+		}
+
 	}
 
 }

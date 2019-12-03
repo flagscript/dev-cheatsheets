@@ -4560,7 +4560,13 @@ header {
   grid-template-columns: repeat(4, 1fr); }
 
 @media screen and (max-width: 425px) {
+  .cheats {
+    grid-template-columns: repeat(2, 1fr); }
+    .cheats i {
+      display: block; }
   .cheats-command {
     grid-template-columns: repeat(2, 1fr); }
-  .cheats-command {
-    grid-template-columns: repeat(2, 1fr); } }
+    .cheats-command i {
+      display: block; }
+  .cheats-environment i {
+    display: block; } }
