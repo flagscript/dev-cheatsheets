@@ -4558,3 +4558,9 @@ header {
 
 .cheats-command {
   grid-template-columns: repeat(4, 1fr); }
+
+@media screen and (max-width: 425px) {
+  .cheats-command {
+    grid-template-columns: repeat(2, 1fr); }
+  .cheats-command {
+    grid-template-columns: repeat(2, 1fr); } }
